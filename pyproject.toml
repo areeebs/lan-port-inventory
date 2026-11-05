@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lan_port_inventory"
+version = "0.1.0"
+description = "Take a bounded TCP service snapshot of one private IPv4 address you administer."
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Ahmed Areeb"}]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Information Technology", "Topic :: Security"]
+
+[project.scripts]
+lan-port-inventory = "tool:main"
+
+[tool.setuptools]
+py-modules = ["tool"]
